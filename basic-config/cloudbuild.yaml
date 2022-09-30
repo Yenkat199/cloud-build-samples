@@ -17,7 +17,7 @@ coud
 steps:
   - name: 'bash'
     args: ['echo', 'Hello world!']
-    logsBucket: 'LOGS_BUCKET_LOCATION'
+    logsBucket: 'us-central1'
     serviceAccount: 'projects/${PROJECT_ID}/serviceAccounts/${SERVICE_ACCOUNT}'
     options:
       logging: CLOUD_LOGGING_ONLY
