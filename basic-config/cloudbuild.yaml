@@ -16,7 +16,7 @@
 steps:
   - name: 'bash'
     args: ['echo', 'Hello world!']
-    logsBucket: 'us-central1'
+    logsBucket: '${LOGS_BUCKET_LOCATION}'
     serviceAccount: '${SERVICE_ACCOUNT}'
     options:
       logging: CLOUD_LOGGING_ONLY
@@ -46,5 +46,6 @@ steps:
     substitutions:
       PROJECT_ID: inner-bonus-362508
       SERVICE_ACCOUNT: 799854541648@cloudbuild.gserviceaccount.com
+      LOGS_BUCKET_LOCATION: 
       
 # [END cloudbuild_basic_config]
