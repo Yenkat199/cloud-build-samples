@@ -45,7 +45,7 @@ steps:
       - 'CLOUDSDK_COMPUTE_ZONE=us-central1-a'
      
     substitutions:
-      PROJECT_ID = inner-bonus-362508
-      SERVICE_ACCOUNT = 799854541648@cloudbuild.gserviceaccount.com
+      PROJECT_ID: inner-bonus-362508
+      SERVICE_ACCOUNT: 799854541648@cloudbuild.gserviceaccount.com
       
 # [END cloudbuild_basic_config]
